@@ -43,6 +43,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+- Closure lets you put functions within functions, and those inner functions can access everything thats within the outer function. No matter how deep a function gets in that stockpile, it can access anything outside of it.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +67,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+- it's used in the personalDice function. You can tell because it's returning a function that is doing a seperate feature.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+
+- The same thing every time is guaranteed to be his name "Dan". What would change is the dice roll number.
+
+c. What is the lexical scope of `newRoll`?
+
+- newRoll is function scoped, and its scoped to the function within the personalDice function, so it cannot be referenced outside of it.
 
 
 ### Task 3 - Stretch Goals
